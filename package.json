@@ -1,0 +1,20 @@
+{
+  "name": "sql-require",
+  "version": "1.0.0",
+  "description": "Node.js require extension for .sql files",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bingo347/sql-require.git"
+  },
+  "keywords": [
+    "sql",
+    "require"
+  ],
+  "author": "Dmitriy Belyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bingo347/sql-require/issues"
+  },
+  "homepage": "https://github.com/bingo347/sql-require#readme"
+}
