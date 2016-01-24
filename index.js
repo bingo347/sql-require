@@ -115,7 +115,21 @@ function initResult() {
 
 function iterator() {
     var $this = this;
-
+    var i = 0;
+    var len = this.length;
+    return {
+        next : function next() {
+            var ret = {
+                done : false,
+                value : $this[i]
+            };
+            i++;
+            if(i >= len) {
+                ret.done = true;
+            }
+            return ret;
+        }
+    };
 }
 
 function trim(str) {
