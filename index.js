@@ -74,6 +74,7 @@ function parseSQL(lines) {
             }
             query += line.substr(0, p);
             line = line.substr(p + delimiter.length);
+            quotes = findQuotes(line);
             p = 0;
             if(name && parseInt(name) != name) {
                 result[name] = query;
